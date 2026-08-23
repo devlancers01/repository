@@ -4,7 +4,7 @@
 ---
 
 **Submitted to:** [Client Name]
-**Submitted by:** [Your Company / Agency Name]
+**Submitted by:** Devlancers
 **Date:** August 2026
 **Document Version:** 1.0
 **Proposal Validity:** 60 days from submission date
