@@ -4,7 +4,7 @@
 ---
 
 **Submitted to:** [Client Name]
-**Submitted by:** Devlancers
+**Submitted by:** [Your Company / Agency Name]
 **Date:** August 2026
 **Document Version:** 1.0
 **Proposal Validity:** 60 days from submission date
@@ -743,159 +743,123 @@ All items from Section 7.4 are addressed:
 
 ---
 
-## 17. PHASE-WISE TIMELINE
+## 17. TIMELINE — 2 MONTHS DELIVERY
 
-| Phase | What We Build | Duration |
+Phases 2 and 3 run in parallel (backend and frontend teams work concurrently), enabling full delivery in 8 weeks.
+
+| Week | Activity | Milestone / Sign-off |
 |---|---|---|
-| **Phase 1 — Architecture & Discovery Sprint** | Data model finalization, field dictionary, API contract, URL/routing plan, open-decision confirmation, wireframe review | 2 weeks |
-| **Phase 2 — Backend & CMS Build** | Supabase schema, REST API (all endpoints), CMS admin dashboard, automation engine, role-based auth, publishing workflow | 6 weeks |
-| **Phase 3 — Frontend Build** | Component library (45–50 components), all 4 template families (7 template variants), calculator, search, media pipeline, schema/SEO | 8 weeks |
-| **Phase 4 — QA, Testing & DevOps** | CI/CD pipeline, full test suite, 3 environments, performance budgets, security audit, developer documentation | 3 weeks |
-| **Phase 5 — Soft Launch & Handover** | Staging → production cutover, monitoring setup, CMS training, 30-day hypercare support | 2 weeks |
-| **Total** | | **~21 weeks / ~5 months** |
-
-**Milestones and client sign-off points:**
-- End of Phase 1: Data model and API contracts approved before any code is written
-- End of Phase 2: CMS demo with a test Area record and full automation flow
-- End of Phase 3: Staging site with all 4 page types populated with sample content
-- End of Phase 4: Lighthouse CI passing, full test suite green, security review complete
-- End of Phase 5: Production launch
+| **Week 1** | Architecture & Discovery — data model, API contracts, URL structure, open decisions locked | ✅ Client approves data model before code begins |
+| **Week 2–4** | Backend & CMS — Supabase schema, REST API, CMS dashboard, automation engine, auth + RLS | ✅ Live CMS demo: new Area record auto-generates page |
+| **Week 3–6** | Frontend — component library, all 4 template families (7 variants), calculator, search, SEO/schema, R2 media pipeline | ✅ Staging site live with all page types populated |
+| **Week 7** | QA & DevOps — CI/CD pipeline, full test suite, 3 environments, Lighthouse CI, security audit | ✅ All tests green; Lighthouse scores meet budgets |
+| **Week 8** | Launch & Handover — production cutover, monitoring setup, CMS training, documentation handover | ✅ Production live; 30-day hypercare begins |
 
 ---
 
-## 18. QUOTATION — IMPLEMENTATION COST (Section 11)
+## 18. QUOTATION — IMPLEMENTATION COST
 
-*All amounts are in [USD / INR — vendor to specify currency]. Itemised per Section 11.1.*
+*One-time build cost. All amounts in INR.*
 
-### One-Time Implementation Cost
-
-| Line Item | Effort (Weeks) | Cost |
+| Phase | Scope Summary | Cost (INR) |
 |---|---|---|
-| **Phase 1 — Architecture & Discovery** | 2 | [Amount] |
-| **Phase 2 — Backend & CMS** | | |
-| — Supabase schema (35 entities + taxonomy + audit) | | [Amount] |
-| — Custom REST API (all endpoints + caching) | | [Amount] |
-| — CMS admin dashboard (CRUD + workflow UI) | | [Amount] |
-| — CMS automation engine (triggers + event queue) | | [Amount] |
-| — Supabase Auth + RLS (8 roles) | | [Amount] |
-| **Phase 2 Subtotal** | 6 | [Amount] |
-| **Phase 3 — Frontend & Component Build** | | |
-| — Component library (45–50 components, all states) | | [Amount] |
-| — Area Page template + Area Hub template | | [Amount] |
-| — Cost Page template (Hub + Article) | | [Amount] |
-| — Comparison Page template (Hub + Article) | | [Amount] |
-| — Guide Page template (Hub + Sub-Hub + Article) | | [Amount] |
-| — Cost calculator + lead capture | | [Amount] |
-| — Interactive checklist + gated PDF download | | [Amount] |
-| — JSON-LD / structured data (all page types) | | [Amount] |
-| — AI Quick Answer + speakable schema | | [Amount] |
-| — Dynamic XML sitemaps | | [Amount] |
-| — Search & filtering (PostgreSQL FTS + frontend) | | [Amount] |
-| — Cloudflare R2 media pipeline + image optimization | | [Amount] |
-| **Phase 3 Subtotal** | 8 | [Amount] |
-| **Phase 4 — QA, Testing & DevOps** | | |
-| — CI/CD pipeline (GitHub Actions) | | [Amount] |
-| — Unit + integration + E2E test suite | | [Amount] |
-| — Accessibility testing (axe-core + manual) | | [Amount] |
-| — Performance / Lighthouse CI | | [Amount] |
-| — Developer documentation + component docs | | [Amount] |
-| **Phase 4 Subtotal** | 3 | [Amount] |
-| **Phase 5 — Launch & Handover** | 2 | [Amount] |
+| **Phase 1 — Architecture & Discovery** | Data model, API contracts, field dictionary, URL/routing plan | ₹15,000 |
+| **Phase 2 — Backend & CMS** | Supabase schema (35 entities), REST API (all endpoints + caching), CMS dashboard (CRUD + 7-stage workflow), automation engine, Supabase Auth + RLS (8 roles) | ₹55,000 |
+| **Phase 3 — Frontend & Components** | Component library (45–50 components, all states + breakpoints), Area/Cost/Comparison/Guide templates (7 variants), calculator, gated PDF download, search UI, JSON-LD schema, AI Quick Answer, sitemaps, R2 media pipeline | ₹75,000 |
+| **Phase 4 — QA & DevOps** | CI/CD (GitHub Actions), unit/integration/E2E/accessibility/performance test suite, 3 environments, security audit, developer + component documentation | ₹25,000 |
+| **Phase 5 — Launch & Handover** | Production cutover, monitoring setup, CMS training (3 sessions), 30-day hypercare | ₹10,000 |
 | | | |
-| **TOTAL ONE-TIME IMPLEMENTATION** | **~21 weeks** | **[Total Amount]** |
+| **TOTAL ONE-TIME IMPLEMENTATION** | | **₹1,80,000** |
 
-### UI/Visual Design
-
-Visual design (high-fidelity mockups in Figma for all 4 page-type families and the component library) is **[included / quoted separately at [Amount]]**. *(Vendor to select one.)*
-
-If the client's internal team has produced wireframes and mockups (as indicated in Section 1.3), we can proceed directly from those, reducing design effort to component-level visual specification only.
+> **UI/Visual Design:** Since the client has produced wireframes and mockups (Section 1.3 of the requirements document), design effort is scoped to component-level visual specification only and is included in the Phase 3 cost above. Full Figma design from scratch is available as an add-on at ₹25,000–₹40,000 if required.
 
 ---
 
-## 19. THIRD-PARTY & HOSTING COST ESTIMATES
+## 19. THIRD-PARTY, HOSTING & TESTING SERVICES
 
-*Pass-through costs — billed at actual, itemised separately from our agency fee.*
+*These are pass-through costs billed at actual. Quoted in USD as they are international SaaS subscriptions. INR equivalent at current rates shown for reference.*
 
-| Service | Tier | Estimated Monthly Cost | Notes |
-|---|---|---|---|
-| **Supabase** | Pro plan | ~$25/month | Includes 8GB database, 100GB storage, 5GB bandwidth |
-| **Vercel** | Pro plan | ~$20/month | Includes ISR, analytics, 1TB bandwidth |
-| **Cloudflare R2** | Pay-as-you-go | ~$15–$40/month | At 1TB storage + zero egress. Scales with content volume |
-| **Cloudflare CDN** | Free plan | $0 | Included with Cloudflare R2 |
-| **Cloudflare Rate Limiting** | Pay-as-you-go | ~$5/month | 1M good requests/month free |
-| **Google Cloud Run** (if triggered) | Pay-as-you-go | $0–$50/month | Scales to zero; only costs when active |
-| **Sentry** | Team plan | ~$26/month | Error tracking + performance |
-| **Uptime Robot** | Pro | ~$7/month | Uptime monitoring |
-| **GitHub** | Team plan | ~$4/month per user | CI/CD, version control |
-| **Search (PostgreSQL FTS)** | Included in Supabase | $0 | No additional cost |
-| **Search (Algolia, if upgraded later)** | Grow plan | ~$50/month | Pass-through, billed separately if chosen |
-| | | | |
-| **Estimated Monthly Total (v1.0)** | | **~$100–$150/month** | Excluding Algolia and Cloud Run |
-| **At scale (>500k monthly visitors)** | | **~$250–$400/month** | Cloudflare R2 + Vercel bandwidth + Cloud Run |
+### Hosting & Infrastructure
 
-**Premium plugin/license costs: $0.** Our entire stack is open-source or pay-as-you-go with no mandatory premium plugins.
+| Service | Plan | Monthly Cost (USD) | ~INR/month | Notes |
+|---|---|---|---|---|
+| Supabase | Pro | ~$25 | ~₹2,100 | Database, auth, storage, realtime |
+| Vercel | Pro | ~$20 | ~₹1,700 | ISR, analytics, 1TB bandwidth |
+| Cloudflare R2 | Pay-as-you-go | ~$15–$40 | ~₹1,250–₹3,350 | Storage + zero egress — no bandwidth fees |
+| Cloudflare CDN | Free | $0 | ₹0 | Included with R2 |
+| Cloudflare Rate Limiting | Pay-as-you-go | ~$5 | ~₹420 | API protection |
+| Google Cloud Run | Pay-as-you-go | $0–$50 | ₹0–₹4,200 | Only activates if traffic exceeds Vercel limits |
+| **Hosting subtotal (v1.0)** | | **~$65–$90/month** | **~₹5,500–₹7,600/month** | |
+
+### Testing & Quality Services
+
+| Service | Purpose | Plan | Monthly Cost (USD) | ~INR/month |
+|---|---|---|---|---|
+| **Jest** | Unit & integration tests | Open source | $0 | ₹0 |
+| **Playwright** | E2E & cross-browser tests | Open source | $0 | ₹0 |
+| **axe-core** | Automated accessibility testing | Open source | $0 | ₹0 |
+| **Lighthouse CI** | Performance budgets in CI | Open source | $0 | ₹0 |
+| **Sentry** | Error tracking + performance monitoring | Team plan | ~$26 | ~₹2,200 |
+| **GitHub Actions** | CI/CD automation (test runner + deploy) | Free tier (2,000 min/month) | $0 | ₹0 |
+| **Uptime Robot** | Uptime + alert monitoring | Pro | ~$7 | ~₹590 |
+| **Testing subtotal** | | | **~$33/month** | **~₹2,790/month** |
+
+> **Total third-party cost at launch:** ~$98–$123/month (~₹8,300–₹10,400/month)
+> **At scale (>500k monthly visitors):** ~$200–$350/month (~₹17,000–₹30,000/month) — primarily Vercel bandwidth + Cloud Run
+
+**No premium plugins or paid templates required.** The entire stack is open-source or pay-as-you-go.
 
 ---
 
-## 20. ASSUMPTIONS & EXPLICIT EXCLUSIONS
+## 20. ASSUMPTIONS & EXCLUSIONS
 
-### Assumptions
+**Key assumptions:**
+1. Client provides final wireframes/mockups before Week 3 (Phase 3 start).
+2. Client procures a Cloudflare account and points domain DNS to Cloudflare before Week 7.
+3. Client provides seed content (3 Area pages, 2 Cost pages, 1 Comparison, 2 Guides) for QA testing.
+4. Greenfield build — no existing content migration.
+5. Geographic taxonomy locked at 4 tiers (Country → State → City → Area).
 
-1. The client will provide final approved wireframes and page mockups as referenced in Section 1.3 before Phase 3 begins.
-2. The client has or will procure a Cloudflare account. Domain DNS must be pointed to Cloudflare for CDN and R2 to function optimally.
-3. Content for sample/seed pages (minimum 3 Area pages, 2 Cost pages, 1 Comparison page, 2 Guide articles) will be provided by the client for testing purposes before QA begins.
-4. The existing website (if any) is not being migrated. This is a greenfield build. If content migration is required, this is a separate scope item.
-5. No third-party integrations (CRM, ERP, billing) are in scope unless explicitly listed.
-6. The geographic taxonomy is locked at 4 tiers (Country → State → City → Area) with a reserved nullable sub-area column.
-7. Multi-language UI is scoped as "locale field in schema from day one" — translation workflow and translated content are not in scope for v1.0.
-
-### Explicit Exclusions
+**Out of scope (change request required for any of these):**
 
 | Item | Notes |
 |---|---|
-| Content writing for 1,000+ Area pages | Confirmed out of scope per Section 13 of this proposal. Separate content workstream. |
-| Visual/UI design (if quoted separately) | See Section 18 for design scope declaration |
-| CRM integration (Salesforce, HubSpot, Zoho) | Change request required; estimated 1–2 week sprint |
-| Payment gateway integration | Not in scope |
-| Algolia implementation | PostgreSQL FTS is in scope; Algolia is documented as an upgrade path only |
-| Multi-language content & translation workflow | Locale fields built in; translation UI and translated content are not in scope |
-| Multi-brand/franchise UI | Brand entity modelled as placeholder; brand-switching UI is a future sprint |
-| Social media scheduling or email marketing | Not in scope |
-| Third-party analytics beyond Vercel Analytics (e.g. GA4, Hotjar) | Tag installation included if client provides tracking codes; analytics configuration is client responsibility |
+| Content writing for 1,000+ Area pages | Separate content workstream — not in this quote |
+| CRM / ERP integration | ~1–2 week sprint; quoted separately on request |
+| Algolia search | PostgreSQL FTS in scope; Algolia is a documented upgrade path |
+| Multi-language translation workflow | Locale field is built into schema from day one; translation UI is a future sprint |
+| Multi-brand/franchise UI | Brand entity is modelled as a placeholder; UI is a future sprint |
+| GA4 / Hotjar configuration | Tag installation included; account setup is client responsibility |
 
-### Change Request Process
-
-Any item outside the agreed scope above will be handled as a change request:
-1. Client submits written change request describing the addition
-2. We respond within 3 business days with effort estimate and timeline impact
-3. Client approves or rejects in writing
-4. Approved change requests are scheduled in the next available sprint
+**Change request process:** Written request → 3-business-day estimate → written approval → scheduled in next sprint.
 
 ---
 
-## 21. POST-LAUNCH SUPPORT & ANNUAL MAINTENANCE
+## 21. POST-LAUNCH SUPPORT & MAINTENANCE
 
-### Included in Quoted Price (30-day Hypercare)
+### 30-Day Hypercare (Included in Project Cost)
+- Bug fixes on any delivered scope item (24-hour response)
+- Sentry alert monitoring and response
+- CMS training — 3 sessions × 2 hours
+- Documentation of any post-launch edge cases
 
-- Bug fixes for any defect in delivered scope (response within 24 hours)
-- Performance monitoring and alert response
-- CMS training sessions (up to 3 sessions, max 2 hours each)
-- Documentation of any undocumented edge cases discovered post-launch
+### Monthly Maintenance Retainer (Post Hypercare)
 
-### Annual Maintenance (Quoted Separately)
+| What's Covered | Frequency |
+|---|---|
+| Security patches & dependency updates | Monthly |
+| Next.js / Supabase version upgrades | Quarterly |
+| Bug fixes up to 8 hours/month | Ongoing |
+| Schema.org structured data updates | As standards change |
+| Performance monitoring & alert response (Sentry + Uptime Robot) | Continuous |
+| Minor content model or CMS field adjustments | On request, within hours allowance |
 
-| Service | Included | Estimated Annual Cost |
+| Retainer Tier | Monthly Cost (INR) | Best For |
 |---|---|---|
-| Security patches & dependency updates | Monthly | [Amount] |
-| Next.js / Supabase version upgrades | Quarterly | [Amount] |
-| New Area page template variations (if needed) | Up to 2/year | [Amount] |
-| Schema.org structured data updates | As Google changes standards | [Amount] |
-| Performance audit & optimisation | Semi-annual | [Amount] |
-| Bug fixes beyond 30-day hypercare | Included up to 8 hours/month | [Amount] |
-| | | |
-| **Annual Maintenance Subtotal** | | **[Total Annual Amount]** |
+| Standard | ₹20,000/month | Up to 8 hrs dev + monitoring |
+| Extended | ₹30,000/month | Up to 16 hrs dev + monitoring + semi-annual performance audit |
 
-*Additional development beyond the above is billed at our standard [daily/hourly] rate of [Amount].*
+> Development beyond the included hours is billed at ₹[rate]/hour. Any new feature or template is a separate change request.
 
 ---
 
